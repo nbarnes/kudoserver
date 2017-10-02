@@ -84,43 +84,6 @@ POST: `curl -H "Content-Type: application/json" -d '{"username":"daenerys", "fir
 ]
 ```
 
-**Request**: 
-
-`GET /users/:user_id/kudos` - list all received kudos of user_id
-
-*Parameters*:
-
-`user_id` - integer ID of user who you wish to get kudos for
-
-**Response**: 
-
-`200 OK`
-
-`Content-Type: application/json`
-
-*Body*:
-
-```json
-[
-    {
-        "created_at": "2017-09-12T21:18:27.321Z",
-        "giver_id": 1,
-        "id": 1,
-        "receiver_id": 1,
-        "text": "Test Kudo",
-        "updated_at": "2017-09-12T21:18:27.321Z"
-    },
-    {
-        "created_at": "2017-09-12T21:34:04.793Z",
-        "giver_id": 1,
-        "id": 2,
-        "receiver_id": 1,
-        "text": "Test Kudo",
-        "updated_at": "2017-09-12T21:34:04.793Z"
-    }
-]
-```
-
 **Request**:
 
 `POST /kudos` - create a new kudos record
