@@ -9,6 +9,8 @@ gem 'rails', '~> 5.1.3'
 gem 'pg'
 gem 'puma', '~> 3.7'
 
+gem 'rack-cors'
+
 gem 'faker'
 
 group :development, :test do
